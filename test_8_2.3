@@ -1,0 +1,16 @@
+#include<stdio.h>
+int move(int num1) {
+	int num2 = 0;
+		num2 = num1 >> 3;
+		return num2;
+}
+int main()
+{
+	int num3[] = { 1,2,3 };
+	int num4=0, num5=0;
+	printf("从下列数字中选择一个数\n%d,%d,%\n", num3[0], num3[1], num3[2]);
+	scanf_s("%d", &num4);
+	num5 = move(num4);
+	printf("%d", num5);
+	return 0;
+}

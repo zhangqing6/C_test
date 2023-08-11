@@ -1,0 +1,35 @@
+#define __CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+struct 原神
+{
+	char name[20];
+	short 星级;
+};
+int main() {
+	struct 原神 角色={"迪卢克",5};
+		printf("角色为%s\n",角色.name);
+		printf("星级为%d\n", 角色.星级);
+		int age;
+			printf("请输入你的年龄\n");
+			scanf_s("%d", &age);
+			if (age == 17) {
+				printf("请输入你想存入的数字\n");
+				int num;
+				scanf_s("%d", &num);
+				int* p = &num;
+				printf("%d", p);
+			}
+			else {
+				printf("我录取的大学为\n");
+				int sum;
+				scanf_s("%d", &sum);
+				if (sum == 1) {
+
+					printf("中南大学");
+				}
+				else {
+					printf("结束");
+				}
+				}
+	return 0;
+}

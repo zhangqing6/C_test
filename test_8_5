@@ -1,0 +1,31 @@
+#define __CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<string.h>
+struct 学生 {
+	char name[7];
+	short  age;
+	char schoolname[13];
+};
+struct 大学生 {
+	char collage[13];
+};
+int main() {
+	struct 学生 我={"张卿",17,"都昌一中"};
+	printf("%s\n", 我.name);
+	printf("%d\n", 我.age);
+	printf("%s\n", 我.schoolname);
+	printf("请输入录取的大学\n");
+	struct 大学生 me = { "中南大学" };
+	char collagename[13];
+	scanf_s("%s\n", & collagename);
+	if (collagename =="中南大学" ){
+		printf("%s\n", 我.name);
+		printf("%d\n", 我.age);
+		strcpy_s(我.schoolname, "中南大学");
+		printf("%s\n", 我.schoolname);
+	}
+	else {
+		printf("结束");
+	}
+	return 0;
+}

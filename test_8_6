@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<string.h>
+struct 学生 {
+	char name[13];
+	short age;
+	char schoolname[13];
+};
+struct 大学生 {
+	char collagename[20];
+};
+int compare(char arr1[], char arr2[]) {
+	int i=0 ;
+		if (arr1[i] = arr2[i]) {
+			return 1;
+		}
+		else {
+			return 0;
+		}
+	}
+	int main() {
+	struct 学生 我 = { "张卿",17,"都昌一中" };
+	printf("我的名字为%s\n 我的年龄为%d\n我的学校为%s\n", 我.schoolname,我.age,我.schoolname);
+	struct 大学生 zq = { "中南大学" };
+	char NAME[13];
+	scanf_s("%s", &NAME);
+	int answer = compare(NAME, zq.collagename);
+	if (answer == 1) {
+		printf("我的名字为%s\n我的年龄为%d我的录取大学为%s",我.name,我.age, zq.collagename);
+	}
+	else {
+		printf("失败\n");
+	}
+	return 0;
+}

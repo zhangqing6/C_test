@@ -1,0 +1,25 @@
+#include<stdio.h>
+int move(int x) {
+	int y ;
+	y = x * x;
+	return y;
+}
+int main() {
+	int choice;
+	int anwser = 0;
+	printf("是否要进行运算（是填1，否填0）\n");
+	scanf_s("%d", &choice);
+	if (choice == 1) {
+		int num = 1;
+while (num != 0) {
+printf("请再输入一个数字\n");
+scanf_s("%d", &num);
+anwser = anwser + move(num);
+}
+printf("最终结果为%d", anwser);
+	}
+	else {
+		printf("结束\n");
+	}
+	return 0;
+}

@@ -1,0 +1,14 @@
+#include<stdio.h>
+#define MIN(X,Y) (X<Y?X:Y)
+int main() {
+	int a;
+	int b;
+	int c = 0;
+	printf("请输入两个数字（并用空格隔开）\n");
+	scanf_s("%d%d", &a, &b);
+	c = MIN(a, b);
+	printf("%d\n", c);
+	int* p = &c;
+	printf("%d", p);
+	return 0;
+}
