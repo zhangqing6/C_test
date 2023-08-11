@@ -4,25 +4,25 @@
 int main() {
 	char arr1[20] = { 0 };
 	char arr2[20] = { 0 };
-	printf("ÇëÔ¤ÉèÃÜÂë\n");
+	printf("è¯·é¢„è®¾å¯†ç \n");
 	scanf("%s", arr1);
 	int i = 0;
 	for (i = 0; i < 3; i++)
 	{
-		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nÇëÊäÈëÃÜÂë\n");
+		printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nè¯·è¾“å…¥å¯†ç \n");
 		scanf("%s", arr2);
 		if (strcmp(arr1, arr2) == 0) 
 		{
-			printf("µÇÈë³É¹¦\n");
+			printf("ç™»å…¥æˆåŠŸ\n");
 			break;
 		}
 		else {
-			printf("ÃÜÂë´íÎó\n");
+			printf("ç™»å…¥å¤±è´¥\n");
 		}
 	}
 	if (3 == i)
 	{
-		printf("µÇÈëÊ§°Ü\n");
+		printf("ç™»å…¥å¤±è´¥\n");
 	}
 	return 0;
 }
