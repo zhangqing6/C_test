@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main() {
+	printf("请输入字符(不超过10个)\n");
+	char ch = '0';
+	scanf_s("%c",&ch);
+	while ((ch = getchar()) != EOF) {
+		if (ch < '0' || ch>'9')
+			continue;
+		putchar(ch);
+	}
+
+	return 0;
+}
