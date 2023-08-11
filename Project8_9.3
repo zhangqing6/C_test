@@ -1,0 +1,33 @@
+#include<stdio.h>
+int sum(int a){ 
+	static int b = 0;
+	int c = 0;
+	b += 2;
+	c += 3;
+	return (a + b - c);
+}
+int min(int x,int y){
+	if (x < y) {
+		return x;
+	}
+	else {
+		return y;
+	}
+}
+int main() {
+	int a = 3;
+	int choice;
+	int i=0;
+	printf("请输入你想循环的次数\n");
+	scanf_s("%d", &choice);
+	while (i <= choice) {
+		printf("得出的结果为%d\n", sum(a));
+		i++;
+	}
+	int sz = sizeof(sum(a));
+	printf("字符个数为%d\n", sz);
+	int m = 0;
+	m = min(sum(a), choice);
+	printf("比较得出的最小值为%d\n", m);
+	return 0;
+}
